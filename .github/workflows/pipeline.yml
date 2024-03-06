@@ -28,7 +28,4 @@ jobs:
       run: npm install
 
     - name: Start Web Server
-      run: npm start
-
-    - name: Start Cypress test
-      run: npx cypress run --headless
+      run: npm start & npx cypress run --headless
